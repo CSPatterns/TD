@@ -10,6 +10,9 @@ class Player {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
+        
+        int heighTest;
+        int maxHeight;
 
         // game loop
         while (true) {
@@ -18,6 +21,12 @@ class Player {
             for (int i = 0; i < 8; i++) {
                 
                 int mountainH = in.nextInt(); // represents the height of one mountain, from 9 to 0. Mountain heights are provided from left to right.
+                
+                if(maxHeight < mountainH){
+                	maxHeight = mountainH;
+                	heightTest = i;
+                }
+                
                 if (spaceX == mountainH){
                     System.out.println("FIRE");
                 }
