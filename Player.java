@@ -27,14 +27,16 @@ class Player {
                 	heightTest = i;
                 }
                 
-                if (spaceX == mountainH){
+               
+            }
+            
+             	if (spaceX == mountainH){
                     System.out.println("FIRE");
                 }
                 else{
                      System.out.println("HOLD");
                 }
                 
-            }
 
             // Write an action using System.out.println()
             // To debug: System.err.println("Debug messages...");
