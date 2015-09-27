@@ -11,11 +11,13 @@ class Player {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         
-        int heighTest;
+        int heightTest;
         int maxHeight;
 
         // game loop
         while (true) {
+        	heightTest =0;
+        	maxHeight = 0;
             int spaceX = in.nextInt();
             int spaceY = in.nextInt();
             for (int i = 0; i < 8; i++) {
@@ -30,7 +32,7 @@ class Player {
                
             }
             
-             	if (spaceX == mountainH){
+             	if (spaceX == heightTest){
                     System.out.println("FIRE");
                 }
                 else{
@@ -41,7 +43,7 @@ class Player {
             // Write an action using System.out.println()
             // To debug: System.err.println("Debug messages...");
 
-            System.out.println("HOLD"); // either:  FIRE (ship is firing its phase cannons) or HOLD (ship is not firing).
+            //System.out.println("HOLD"); // either:  FIRE (ship is firing its phase cannons) or HOLD (ship is not firing).
         }
     }
 }
